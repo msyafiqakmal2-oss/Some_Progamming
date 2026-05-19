@@ -1,0 +1,1 @@
+This program is my intention to make something about the web but I'm stuck because my vs code is a live server and doesn't support PHP and MySQL and I decided to stop because I'm confused too hehe and I will reset it again so I can develop more
