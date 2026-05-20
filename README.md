@@ -51,3 +51,5 @@ Fast database system
 Reliable
 Secure
 Supports large amounts of data
+
+But Mayber I can to be improve for do anything you can and i want to learning some thing for the next time
