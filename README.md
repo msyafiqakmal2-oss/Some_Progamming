@@ -1,55 +1,45 @@
-This program is my intention to make something about the web but I'm stuck because my vs code is a live server and doesn't support PHP and MySQL and I decided to stop because I'm confused too hehe and I will reset it again so I can develop more
+# 🌐 Web Application Project
 
-What is PHP?
+[![Status](https://img.shields.io/badge/Status-In_Development-orange.svg)]()
+[![Language](https://img.shields.io/badge/Main_Tech-PHP%20%7C%20HTML%20%7C%20Docker-blue.svg)]()
 
-PHP is a server-side scripting language used to create dynamic websites and web applications.
-It is widely used for web development because it can easily connect with databases, process forms, manage sessions, and generate web pages dynamically.
+Selamat datang di repositori proyek web saya! Proyek ini dibangun untuk mempelajari pembuatan aplikasi web dinamis yang menghubungkan frontend (HTML/CSS) dengan backend pemrosesan data (PHP) serta manajemen basis data.
 
-When a user opens a PHP website:
+---
 
-The browser sends a request to the server.
-The server processes the PHP code.
-PHP can interact with databases, files, or APIs.
-The server sends the final HTML page back to the browser.
+## 🚀 Tech Stack & Tools
 
-What is MySQL?
+Proyek ini memanfaatkan kombinasi teknologi berikut untuk membangun halaman web yang interaktif:
 
-MySQL is a database management system used to store and manage data.
+* **Frontend:** HTML5, CSS3, JavaScript (`abouttt.js`)
+* **Backend:** PHP (`index.php`, `simpan.php`)
+* **DevOps / Environment:** Docker & Docker Compose (`docker-compose.yml`)
 
-A database is like a digital storage system for information such as:
+---
 
-User accounts
-Passwords
-Product data
-Student records
-Orders
+## 📁 Struktur File
 
-MySQL uses a language called SQL (Structured Query Language) to manage data.
+Berikut adalah gambaran singkat mengenai struktur file utama di dalam repositori ini:
 
-Relationship Between PHP and MySQL
+* `index.html` & `about.html` — Struktur halaman utama dan halaman tentang.
+* `style.css` & `about.css` — Desain dan tata letak visual halaman web.
+* `index.php` — Titik masuk utama aplikasi web berbasis server-side PHP.
+* `simpan.php` — Script PHP yang menangani pemrosesan atau penyimpanan data.
+* `abouttt.js` — Menambahkan interaktivitas pada halaman about.
+* `docker-compose.yml` — Konfigurasi container untuk menjalankan server PHP dan MySQL secara lokal.
 
-PHP and MySQL are commonly used together in web development.
+---
 
-PHP handles the website logic.
-MySQL stores the data.
+## 🛠️ Mengapa Menggunakan Docker di Proyek Ini?
 
-Example flow:
+> 💡 **Catatan Pengembangan:** > Ekstensi *Live Server* di VS Code secara bawaan hanya mendukung file statis (HTML/CSS/JS) dan **tidak bisa** mengeksekusi kode backend seperti PHP atau terhubung ke MySQL. 
 
-User fills out a registration form.
-PHP receives the form data.
-PHP sends the data to MySQL.
-MySQL stores the data in the database.
+Untuk mengatasi batasan tersebut, proyek ini dilengkapi dengan **Docker**. Dengan Docker, Anda tidak perlu pusing menginstal XAMPP/Laragon secara manual. Cukup jalankan container, dan lingkungan server PHP serta database MySQL siap digunakan secara instan dan konsisten!
 
-Advantages of PHP and MySQL
-PHP Advantages
-Easy to learn
-Free and open source
-Works on many operating systems
-Large community support
-MySQL Advantages
-Fast database system
-Reliable
-Secure
-Supports large amounts of data
+### Cara Menjalankan Proyek (Menggunakan Docker)
 
-But Mayber I can to be improve for do anything you can and i want to learning some thing for the next time
+1. Pastikan Anda sudah menginstal **Docker Desktop** di komputer Anda.
+2. Buka terminal di folder proyek ini.
+3. Jalankan perintah berikut untuk menyalakan server:
+   ```bash
+   docker-compose up -d
